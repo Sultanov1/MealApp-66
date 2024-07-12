@@ -1,16 +1,16 @@
 import {Route, Routes} from 'react-router-dom';
-import MealForm from './containers/MealForm/MealForm';
 import Home from './containers/Home/Home';
+import MealPage from './containers/MealPage/MealPage';
 
 
 const App = () => {
   return (
     <>
-     <Routes>
-       <Route path="/" element={<Home/>}/>
-       <Route path="/new-meal" element={<MealForm/>}/>
-       <Route path="*" element={<h1>Not found!</h1>}/>
-     </Routes>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/meal-form" element={<MealPage/>}/>
+        <Route path="*" element={<h1>Not found!</h1>}/>
+      </Routes>
     </>
   );
 };
